@@ -9,13 +9,13 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="main-header__top--background">
-      <div class="main-header__top">
+    <div class="main-header__top">
+      <div class="main-header__navigation">
         <a class="main-header__logo" href="#">Техномарт</a>
         <form class="main-search" method="post" action="https://echo.htmlacademy.ru">
           <input class="main-search__field" type="search" name="search" placeholder="Поиск:">
         </form>
-        <ul class="main-header__navigation navigation-list">
+        <ul class="navigation-list">
           <li class="navigation-list__item">
             <a class="navigation-list__link bookmark-link" href="#">Закладки: 0</a>
           </li>
@@ -178,7 +178,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 3000</span>
             </h4>
-            <span class="product__price--delete">22500 Р.</span>
+            <span class="product__price-delete">22500 Р.</span>
             <p class="product__price">15500 Р.</p>
           </li>
           <li class="product__item">
@@ -191,7 +191,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 6000</span>
             </h4>
-            <span class="product__price--delete">30500 Р.</span>
+            <span class="product__price-delete">30500 Р.</span>
             <p class="product__price">25500 Р.</p>
           </li>
           <li class="product__item element-new">
@@ -204,8 +204,8 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 2000</span>
             </h4>
-            <span class="product__price--delete"></span>
-            <p class="product__price price__delete--null">12500 Р.</p>
+            <span class="product__pric-delete"></span>
+            <p class="product__price product__price-null">12500 Р.</p>
           </li>
           <li class="product__item">
             <div class="product__buttons">
@@ -217,7 +217,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 3000</span>
             </h4>
-            <span class="product__price--delete">22500 Р.</span>
+            <span class="product__price-delete">22500 Р.</span>
             <p class="product__price">15500 Р.</p>
           </li>
           <li class="product__item element-new">
@@ -230,7 +230,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 6000</span>
             </h4>
-            <span class="product__price--delete">30500 Р.</span>
+            <span class="product__price-delete">30500 Р.</span>
             <p class="product__price">25500 Р.</p>
           </li>
           <li class="product__item">
@@ -243,8 +243,8 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 2000</span>
             </h4>
-            <span class="product__price--delete"></span>
-            <p class="product__price price__delete--null">12500 Р.</p>
+            <span class="product__price-delete"></span>
+            <p class="product__price product__price-null">12500 Р.</p>
           </li>
           <li class="product__item element-new">
             <div class="product__buttons">
@@ -256,7 +256,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 3000</span>
             </h4>
-            <span class="product__price--delete">22500 Р.</span>
+            <span class="product__price-delete">22500 Р.</span>
             <p class="product__price">15500 Р.</p>
           </li>
           <li class="product__item">
@@ -269,7 +269,7 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 6000</span>
             </h4>
-            <span class="product__price--delete">30500 Р.</span>
+            <span class="product__price-delete">30500 Р.</span>
             <p class="product__price">25500 Р.</p>
           </li>
           <li class="product__item">
@@ -282,8 +282,8 @@
               <span class="product__category">Перфоратор BOSCH</span>
               <span class="product__model">BFG 2000</span>
             </h4>
-            <span class="product__price--delete"></span>
-            <p class="product__price price__delete--null">12500 Р.</p>
+            <span class="product__price-delete"></span>
+            <p class="product__price product__price-null">12500 Р.</p>
           </li>
         </ul>
         <ul class="pagination__list">
@@ -309,29 +309,47 @@
     </p>
   </div>
   <footer class="main-footer">
-    <div class="main-footer__background">
+    <div class="main-footer__menu">
       <nav class="main-footer__top">
         <a class="main-footer__logo" href="#">Техномарт</a>
         <ul class="top-menu">
-          <li class="top-menu__item"><a href="#">Компания</a></li>
-          <li class="top-menu__item"><a href="#">Новости</a></li>
-          <li class="top-menu__item"><a href="#">Каталог</a></li>
-          <li class="top-menu__item"><a href="#">Доставка</a></li>
-          <li class="top-menu__item"><a href="#">Контакты</a></li>
+          <li class="top-menu__item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <nav class="main-footer__bottom">
         <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         <ul class="bottom-menu">
-          <li class="bottom-menu__item"><a href="#">Материалы</a></li>
-          <li class="bottom-menu__item"><a href="#">Техника</a></li>
-          <li class="bottom-menu__item"><a href="#">Инструмент</a></li>
-          <li class="bottom-menu__item"><a href="#">Спецпредложения</a></li>
+          <li class="bottom-menu__item">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="bottom-menu__item">
+            <a href="#">Техника</a>
+          </li>
+          <li class="bottom-menu__item">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="bottom-menu__item">
+            <a href="#">Спецпредложения</a>
+          </li>
         </ul>
       </nav>
     </div>
-    <div class="main-footer__background--cellar">
-      <div class="main-footer__cellar">
+    <div class="main-footer__cellar">
+      <div class="cellar__center">
         <p class="cellar__company">© 2010–2017 Компания «Техномарт» Все права защищены</p>
         <ul class="cellar__list">
           <li class="cellar__item">
