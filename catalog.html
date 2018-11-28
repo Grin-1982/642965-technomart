@@ -11,7 +11,7 @@
   <header class="main-header">
     <div class="main-header__top">
       <div class="main-header__navigation">
-        <a class="main-header__logo" href="#">Техномарт</a>
+        <a class="main-header__logo" href="index.html">Техномарт</a>
         <form class="main-search" method="post" action="https://echo.htmlacademy.ru">
           <input class="main-search__field" type="search" name="search" placeholder="Поиск:">
         </form>
@@ -47,7 +47,7 @@
       <nav class="main-header__menu">
         <ul class="header-menu__list">
           <li class="header-menu__item">
-            <a class="header-menu__link" href="#">Главная</a>
+            <a class="header-menu__link" href="index.html">Главная</a>
           </li>
           <li class="header-menu__item">
             <a class="header-menu__link" href="#">Компания</a>
@@ -89,57 +89,63 @@
     </ul>
     <h1 class="catalog-main__title">Перфораторы</h1>
     <div class="catalog-main__content">
-      <section class="filters">
-        <h3 class="filter-title">Фильтр:</h3>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <div class="filter-price">
-            <label class="price" for="range-price">Цена:</label>
-            <div class="filter-range">
-              <input id="range-price" class="filter-input-range" type="range" min="0" max="30000" step="100">
-            </div>
-            <p class="price-value">
-              <span class="price-min">0</span>-<span class="price-max">30000</span>
+      <section class="filter">
+        <h3 class="filter__title">Фильтр:</h3>
+        <form class="filter__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="filter__price">
+            <label class="price__label">Цена:
+              <input class="price__input-range" type="range" min="0" max="30000" step="100">
+            </label>
+            <p class="price__value">
+              <span class="price__min">0</span>-<span class="price__max">30000</span>
             </p>
           </div>
-          <fieldset class="filter-manufacturers">
-            <legend class="manufacturers">Производители:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                <label for="filter-bosch">Bosch</label>
+          <fieldset class="filter__manufacturers">
+            <legend class="manufacturers__legend">Производители:</legend>
+            <ul class="manufacturers__list">
+              <li class="manufacturers__item">
+                <label class="manufacturers__label">
+                  <input class="visually-hidden filter__input" type="checkbox" name="bosch" checked>Bosch
+                </label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
-                <label for="filter-interscol">Интерскол</label>
+              <li class="manufacturers__item">
+                <label class="manufacturers__label">
+                  <input class="visually-hidden filter__input" type="checkbox" name="interscol">Интерскол
+                </label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                <label for="filter-makita">Makita</label>
+              <li class="manufacturers__item">
+                <label class="manufacturers__label">
+                  <input class="visually-hidden filter__input" type="checkbox" name="makita" checked>Makita
+                </label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
-                <label for="filter-dewalt">DeWalt</label>
+              <li class="manufacturers__item">
+                <label class="manufacturers__label">
+                  <input class="visually-hidden filter__input" type="checkbox" name="dewalt">DeWalt
+                </label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
-                <label for="filter-hitachi">Hitachi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-power">
-            <legend class="power">Питание:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type-power" value="accumulator" id="filter-accumulator" checked>
-                <label for="filter-accumulator">Аккумуляторные</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type-power" value="electric" id="filter-electric">
-                <label for="filter-electric">Сетевые</label>
+              <li class="manufacturers__item">
+                <label class="manufacturers__label">
+                  <input class="visually-hidden filter__input" type="checkbox" name="hitachi">Hitachi
+                </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button">Показать</button>
+          <fieldset class="filter__power">
+            <legend class="power__legend">Питание:</legend>
+            <ul class="power__list">
+              <li class="power__item">
+                <label class="power__label">
+                  <input class="visually-hidden filter__input" type="radio" name="type-power" value="accumulator" checked>Аккумуляторные
+                </label>
+              </li>
+              <li class="power__item">
+                <label class="power__label">
+                  <input class="visually-hidden filter__input" type="radio" name="type-power" value="electric">Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter__button">Показать</button>
         </form>
       </section>
       <section class="catalog-product">
@@ -311,7 +317,7 @@
   <footer class="main-footer">
     <div class="main-footer__menu">
       <nav class="main-footer__top">
-        <a class="main-footer__logo" href="#">Техномарт</a>
+        <a class="main-footer__logo" href="index.html">Техномарт</a>
         <ul class="top-menu">
           <li class="top-menu__item">
             <a href="#">Компания</a>
@@ -354,17 +360,17 @@
         <ul class="cellar__list">
           <li class="cellar__item">
             <a class="cellar__link1" href="#">
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="visually-hidden">Магазин "Техномарт" в контакте</span>
             </a>
           </li>
           <li class="cellar__item">
             <a class="cellar__link2" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="visually-hidden">Магазин "Техномарт" в Фейсбуке</span>
             </a>
           </li>
           <li class="cellar__item">
             <a class="cellar__link3" href="#">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="visually-hidden">Магазин "Техномарт" в Инстаграм</span>
             </a>
           </li>
         </ul>
@@ -379,12 +385,12 @@
       </div>
     </div>
   </footer>
-  <section class="modal-cart visually-hidden">
+  <section class="modal-cart">
     <p class="modal-cart__title">Товар добавлен в корзину</p>
     <a class="modal-cart__btn-link btn" href="#">Оформить заказ</a>
     <button class="modal-cart__btn" type="button">Продолжить покупки</button>
     <button class="modal-cart__btn-close" type="button">
-      <span>Закрыть</span>
+      <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
 </body>
