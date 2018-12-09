@@ -13,7 +13,10 @@
       <div class="main-header__navigation">
         <a class="main-header__logo" href="#">Техномарт</a>
         <form class="main-search" method="post" action="https://echo.htmlacademy.ru">
-          <input class="main-search__field" type="search" name="search" placeholder="Поиск:">
+          <label for="search-field" class="main-search__label">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </label>
+          <input id="search-field" class="main-search__field" type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="navigation-list">
           <li class="navigation-list__item">
@@ -32,15 +35,15 @@
       <section class="main-header__content">
         <h1 class="main-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="main-header__contacts">
-          <a class="main-header__phone" href="tel:+78125550555">+7(812)555-05-55</a>
+          <a class="main-header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="main-header__address">г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
         </div>
         <ul class="main-header__accounts input-list">
           <li class="input-list__item">
-            <a class="input-list__link" href="#">Войти</a>
+            <a class="input-list__link-enter" href="#">Войти</a>
           </li>
           <li class="input-list__item">
-            <a class="input-list__link" href="#">Регистрация</a>
+            <a class="input-list__link-registration" href="#">Регистрация</a>
           </li>
         </ul>
       </section>
@@ -72,22 +75,56 @@
   </header>
   <main>
     <div class="center">
-      <article class="promo">
+      <section class="promo">
         <h2 class="visually-hidden">Промо блоки и слайдер</h2>
-        <section class="promo__blocks">
-          <ul class="promo__list">
-            <li class="promo__item promo__item--materials element_new">
-              <h3 class="promo__title">Материалы</h3>
-              <a class="promo__btn" href="#">На любой вкус</a>
-            </li>
-            <li class="promo__item promo__item--instrument">
-              <h3 class="promo__title">Инструмент</h3>
-              <a class="promo__btn" href="#">На все случаи</a>
-            </li>
-            <li class="promo__item promo__item--technique">
-              <h3 class="promo__title">Техника</h3>
-              <a class="promo__btn" href="#">Для стройки</a>
-            </li>
+        <ul class="promo__list">
+          <li class="promo__item promo__item--materials">
+            <h3 class="promo__title">Материалы</h3>
+            <a class="promo__btn" href="#">На любой вкус</a>
+          </li>
+          <li class="promo__item promo__item--instrument">
+            <h3 class="promo__title">Инструмент</h3>
+            <a class="promo__btn" href="#">На все случаи</a>
+          </li>
+          <li class="promo__item promo__item--technique">
+            <h3 class="promo__title">Техника</h3>
+            <a class="promo__btn" href="#">Для стройки</a>
+          </li>
+        </ul>
+        <div class="promo__blocks">
+          <div class="promo-slider">
+            <h3 class="visually-hidden">Слайдер</h3>
+            <img class="promo-slider__image-1" src="img/sliders/slider1_1.jpg" width="620" height="266" alt="Слайд 1">
+            <img class="promo-slider__image-2" src="img/sliders/slider1_2.jpg" width="620" height="266" alt="Слайд 2">
+            <div class="promo-slider__slide-1">
+              <h4 class="promo-slider__title">Дрели</h4>
+              <span class="promo-slider__text">Соседям на радость!</span>
+            </div>
+            <div class="promo-slider__slide-2">
+              <h4 class="promo-slider__title">Перфораторы</h4>
+              <span class="promo-slider__text">Настоящие мужские игрушки</span>
+            </div>
+            <a class="promo-slider__link btn" href="catalog.html">Открыть каталог</a>
+            <ul class="promo-slider__buttons">
+              <li>
+                <button class="promo-slider__button" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+              </li>
+              <li>
+                <button class="promo-slider__button" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+              </li>
+            </ul>
+            <a class="promo-slider__slide-left" href="#">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </a>
+            <a class="promo-slider__slide-right" href="#">
+              <span class="visually-hidden">Следующий слайд</span>
+            </a>
+          </div>
+          <ul class="promo__list-vertical">
             <li class="promo__item promo__item--discounts">
               <h3 class="promo__title">Скидки 50%</h3>
               <a class="promo__btn" href="#">На 350 товаров</a>
@@ -97,97 +134,56 @@
               <a class="promo__btn" href="#">Бесплатно</a>
             </li>
           </ul>
-        </section>
-        <section class="promo-slider">
-          <h3 class="visually-hidden">Слайдер</h3>
-          <img class="promo-slider__image-1" src="img/sliders/slider1_1.jpg" width="620" height="266" alt="Слайд 1">
-          <img class="promo-slider__image-2" src="img/sliders/slider1_2.jpg" width="620" height="266" alt="Слайд 2">
-          <div class="promo-slider__slide-1">
-            <h4 class="promo-slider__title">Дрели</h4>
-            <span class="promo-slider__text">Соседям на радость!</span>
-          </div>
-          <div class="promo-slider__slide-2">
-            <h4 class="promo-slider__title">Перфораторы</h4>
-            <span class="promo-slider__text">Настоящие мужские игрушки</span>
-          </div>
-          <a class="promo-slider__link btn" href="catalog.html">Открыть каталог</a>
-          <ul class="promo-slider__buttons">
-            <li>
-              <button class="promo-slider__button" type="button">
-                <span class="visually-hidden">Слайд 1</span>
-              </button>
-            </li>
-            <li>
-              <button class="promo-slider__button" type="button">
-                <span class="visually-hidden">Слайд 2</span>
-              </button>
-            </li>
-          </ul>
-          <a class="promo-slider__slide-left" href="#">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </a>
-          <a class="promo-slider__slide-right" href="#">
-            <span class="visually-hidden">Следующий слайд</span>
-          </a>
-        </section>
-      </article>
+        </div>
+      </section>
       <section class="product">
         <div class="product__paragraph">
           <h2 class="product__title">Популярные товары:</h2>
           <a class="product__link btn" href="#">Все популярные товары</a>
         </div>
-        <ul class="product__list">
+        <ul class="product__list product__list--index">
           <li class="product__item">
             <div class="product__buttons">
-              <button class="button__buy button" type="button">Купить</button>
-              <button class="button__in-bookmarks button" type="button">В закладки</button>
+              <a href="#" class="button__buy button">Купить</a>
+              <a href="#" class="button__in-bookmarks button">В закладки</a>
             </div>
-            <img class="product__image" src="img/perforators/bfg-9000.jpg" width="184" height="112" alt="Перфоратор BOSCH BFG 9000" >
-            <h4 class="product__titles">
-              <span class="product__category">Перфоратор BOSCH</span>
-              <span class="product__model">BFG 9000</span>
-            </h4>
+            <img class="product__image" src="img/perforators/bfg-9000.jpg" width="218" height="169" alt="Перфоратор BOSCH BFG 9000" >
+            <h4 class="product__titles">Перфоратор BOSCH BFG 9000</h4>
             <span class="product__price-delete">32500 Р.</span>
-            <p class="product__price">25500 Р.</p>
+            <span class="product__price">25500 Р.</span>
           </li>
           <li class="product__item">
             <div class="product__buttons">
-              <button class="button__buy button" type="button">Купить</button>
-              <button class="button__in-bookmarks button" type="button">В закладки</button>
+              <a href="#" class="button__buy button">Купить</a>
+              <a href="#" class="button__in-bookmarks button">В закладки</a>
             </div>
-            <img class="product__image" src="img/perforators/bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000" >
-            <h4 class="product__titles">
-              <span class="product__category">Перфоратор BOSCH</span>
-              <span class="product__model">BFG 3000</span>
-            </h4>
+            <img class="product__image" src="img/perforators/bfg-3000.jpg" width="218" height="169" alt="Перфоратор BOSCH BFG 3000" >
+            <h4 class="product__titles">Перфоратор BOSCH BFG 3000</h4>
             <span class="product__price-delete">22500 Р.</span>
-            <p class="product__price">15500 Р.</p>
+            <span class="product__price">15500 Р.</span>
           </li>
           <li class="product__item">
             <div class="product__buttons">
-              <button class="button__buy button" type="button">Купить</button>
-              <button class="button__in-bookmarks button" type="button">В закладки</button>
+              <a href="#" class="button__buy button">Купить</a>
+              <a href="#" class="button__in-bookmarks button">В закладки</a>
             </div>
-            <img class="product__image" src="img/perforators/bfg-6000.jpg" width="144" height="112" alt="Перфоратор BOSCH BFG 6000" >
-            <h4 class="product__titles">
-              <span class="product__category">Перфоратор BOSCH</span>
-              <span class="product__model">BFG 6000</span>
-            </h4>
+            <img class="product__image" src="img/perforators/bfg-6000.jpg" width="218" height="169" alt="Перфоратор BOSCH BFG 6000" >
+            <h4 class="product__titles">Перфоратор BOSCH BFG 6000</h4>
             <span class="product__price-delete">30500 Р.</span>
-            <p class="product__price">25500 Р.</p>
+            <span class="product__price">25500 Р.</span>
           </li>
-          <li class="product__item element-new">
-            <div class="product__buttons">
-              <button class="button__buy button" type="button">Купить</button>
-              <button class="button__in-bookmarks button" type="button">В закладки</button>
+          <li class="product__item">
+            <div class="element-new">
+              <span class="visually-hidden">Новинка</span>
             </div>
-            <img class="product__image" src="img/perforators/bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000" >
-            <h4 class="product__titles">
-              <span class="product__category">Перфоратор BOSCH</span>
-              <span class="product__model">BFG 2000</span>
-            </h4>
+            <div class="product__buttons">
+              <a href="#" class="button__buy button">Купить</a>
+              <a href="#" class="button__in-bookmarks button">В закладки</a>
+            </div>
+            <img class="product__image" src="img/perforators/bfg-2000.jpg" width="218" height="169" alt="Перфоратор BOSCH BFG 2000" >
+            <h4 class="product__titles">Перфоратор BOSCH BFG 2000</h4>
             <span class="product__price-delete"></span>
-            <p class="product__price product__price-null">12500 Р.</p>
+            <span class="product__price product__price-null">12500 Р.</span>
           </li>
         </ul>
       </section>
