@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -14,10 +14,11 @@
       <div class="main-header__navigation">
         <a class="main-header__logo" href="#">Техномарт</a>
         <form class="main-search" method="post" action="https://echo.htmlacademy.ru">
+          <input id="search-field" class="main-search__field" type="search" name="search" placeholder="Поиск:">
           <label for="search-field" class="main-search__label">
             <span class="visually-hidden">Поиск по сайту</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </label>
-          <input id="search-field" class="main-search__field" type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="navigation-list">
           <li class="navigation-list__item">
@@ -240,89 +241,55 @@
         </ul>
       </section>
     </div>
-    <article>
-      <section class="service">
-        <div class="service__center">
-          <h2 class="service__title">Сервисы</h2>
-          <p class="service__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="service__blocks">
-            <ul class="service__list">
-              <li class="service__item service__item-delivery">Доставка</li>
-              <li class="service__item">Гарантия</li>
-              <li class="service__item">Кредит</li>
-            </ul>
-            <ul class="service__slider">
-              <li class="slider__delivery">
-                <h3 class="slider__title">Доставка</h3>
-                <p class="slider__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-              </li>
-              <li class="slider__guarantee">
-                <h3 class="slider__title">Гарантия</h3>
-                <p class="slider__text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
-              </li>
-              <li class="slider__credit">
-                <h3 class="slider__title">Кредит</h3>
-                <p class="slider__text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
-                <a class="slider__btn btn" href="#">Отправить заявку</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <div class="about-content">
-        <section class="about-company">
-          <h2 class="about-company__title">Компания «Техномарт»</h2>
-          <p class="about-company__paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="about-company__transport">
-            <li class="transport__item">Деловые линии</li>
-            <li class="transport__item">Автотрейдинг</li>
-            <li class="transport__item">ЖелДорЭкспедиция</li>
+    <section class="service">
+      <div class="service__center">
+        <h2 class="service__title">Сервисы</h2>
+        <p class="service__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="service__blocks">
+          <ul class="service__list">
+            <li class="service__item service__item-delivery">Доставка</li>
+            <li class="service__item">Гарантия</li>
+            <li class="service__item">Кредит</li>
           </ul>
-          <a class="about-company__btn btn" href="#">Подробнее о компании</a>
-        </section>
-        <section class="main-contacts">
-          <h2 class="main-contacts__title">Контакты</h2>
-          <p class="main-contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="main-contacts__map" name="mini-map">
-            <img src="img/mini-map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          </a>
-          <div class="modal-map">
-            <h2 class="modal-map__title visually-hidden">Как до нас добраться</h2>
-            <img class="modal-map__image" src="img/full-map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            <button class="modal-map__close" type="button">
-              <span class="visually-hidden">Закрыть карту</span>
-            </button>
-          </div>
-          <a class="main-contacts__btn btn">Заблудились? Напишите нам!</a>
-          <div class="modal-form">
-            <h2 class="modal-form__title visually-hidden">Обратная форма связи</h2>
-            <form class="modal-form__feedback" method="post" action="https://echo.htmlacademy.ru">
-              <div class="feedback__wrapper">
-                <p class="feedback__login">
-                  <label for="login__field">Ваше имя:</label>
-                  <input id="login__field" class="feedback__write" type="text" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p class="feedback__mail">
-                  <label for="mail__field">Ваш e-mail:</label>
-                  <input id="mail__field" class="feedback__write" type="text" name="e-mail" placeholder="email@example.com">
-                </p>
-                <p class="feedback__text">
-                  <label for="text__field">Текст письма:</label>
-                  <textarea id="text__field" class="feedback__write feedback__textarea" name="free-content" placeholder="В свободной форме"></textarea>
-                </p>
-              </div>
-              <div class="feedback__submit-wrapper">
-                <button class="feedback__submit btn" type="submit">Отправить</button>
-              </div>
-            </form>
-            <button class="modal-form__close" type="button">
-              <span class="visually-hidden">Закрыть форму обратной связи</span>
-            </button>
-          </div>
-        </section>
+          <ul class="service__slider">
+            <li class="slider__delivery">
+              <h3 class="slider__title">Доставка</h3>
+              <p class="slider__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+            </li>
+            <li class="slider__guarantee">
+              <h3 class="slider__title">Гарантия</h3>
+              <p class="slider__text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="slider__credit">
+              <h3 class="slider__title">Кредит</h3>
+              <p class="slider__text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+              <a class="slider__btn btn" href="#">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </article>
+    </section>
+    <section class="about-content">
+      <div class="about-company">
+        <h2 class="about-company__title">Компания «Техномарт»</h2>
+        <p class="about-company__paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="about-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+        <ul class="about-company__transport">
+          <li class="transport__item">Деловые линии</li>
+          <li class="transport__item">Автотрейдинг</li>
+          <li class="transport__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="about-company__btn btn" href="#">Подробнее о компании</a>
+      </div>
+      <div class="main-contacts">
+        <h2 class="main-contacts__title">Контакты</h2>
+        <p class="main-contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <a class="main-contacts__map" href="#" name="mini-map">
+          <img src="img/mini-map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </a>
+        <a class="main-contacts__btn btn" href="writeus.html">Заблудились? Напишите нам!</a>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__menu">
@@ -395,5 +362,41 @@
       </div>
     </div>
   </footer>
+  <section class="modal-map">
+    <h2 class="modal-map__title visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
+    <div class="modal-map__wrapper">
+      <img class="modal-map__image" src="img/full-map.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </div>
+    <button class="modal-map__close" type="button">
+      <span class="visually-hidden">Закрыть карту</span>
+    </button>
+  </section>
+  <section class="modal-form">
+    <h2 class="modal-form__title visually-hidden">Обратная форма связи</h2>
+    <form class="modal-form__feedback" method="post" action="https://echo.htmlacademy.ru">
+      <div class="feedback__wrapper">
+        <p class="feedback__login">
+          <label for="login__field">Ваше имя:</label>
+          <input id="login__field" class="feedback__write" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback__mail">
+          <label for="mail__field">Ваш e-mail:</label>
+          <input id="mail__field" class="feedback__write" type="text" name="e-mail" placeholder="email@example.com" required>
+        </p>
+        <p class="feedback__text">
+          <label for="text__field">Текст письма:</label>
+          <textarea id="text__field" class="feedback__write feedback__textarea" name="free-content" placeholder="В свободной форме" required></textarea>
+        </p>
+      </div>
+      <div class="feedback__submit-wrapper">
+        <button class="feedback__submit btn" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-form__close" type="button">
+      <span class="visually-hidden">Закрыть форму обратной связи</span>
+    </button>
+  </section>
+  <script src="js/index.min.js"></script>
 </body>
 </html>
