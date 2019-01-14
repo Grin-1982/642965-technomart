@@ -1,3 +1,5 @@
+'use strict';
+
   var link = document.querySelector(".main-contacts__btn");
   var popup = document.querySelector(".modal-form");
   var close = popup.querySelector(".modal-form__close");
@@ -10,7 +12,6 @@
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-form-show");
-    name.focus();
   });
 
   close.addEventListener("click", function (evt) {
@@ -42,8 +43,8 @@
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       if (mappopup.classList.contains("modal-map-show")) {
         mappopup.classList.remove("modal-map-show");
       }

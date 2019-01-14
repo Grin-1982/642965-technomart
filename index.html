@@ -5,7 +5,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -81,9 +81,7 @@
         <h2 class="visually-hidden">Промо блоки и слайдер</h2>
         <ul class="promo__list">
           <li class="promo__item promo__item--materials">
-            <div class="element-new">
-              <span class="visually-hidden">Новый раздел</span>
-            </div>
+            <span class="visually-hidden">Новый раздел</span>
             <h3 class="promo__title">Материалы</h3>
             <a class="promo__btn" href="#">На любой вкус</a>
           </li>
@@ -177,10 +175,8 @@
             <span class="product__price-delete">30500 Р.</span>
             <span class="product__price">25500 Р.</span>
           </li>
-          <li class="product__item">
-            <div class="element-new new-product">
-              <span class="visually-hidden">Новинка</span>
-            </div>
+          <li class="product__item element-new">
+            <span class="visually-hidden">Новинка</span>
             <div class="product__buttons">
               <a href="#" class="button__buy button">Купить</a>
               <a href="#" class="button__in-bookmarks button">В закладки</a>
@@ -200,42 +196,42 @@
         <ul class="manufacture__list">
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/bosch.png" width="126" height="37" alt="производитель Bosch">
+              <img class="manufacture__image" src="img/brand/bosch.png" width="126" height="37" alt="производитель Bosch">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/makita.png" width="123" height="40" alt="производитель Makita">
+              <img class="manufacture__image" src="img/brand/makita.png" width="123" height="40" alt="производитель Makita">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/dewalt.png" width="146" height="44" alt="производитель DeWalt">
+              <img class="manufacture__image" src="img/brand/dewalt.png" width="146" height="44" alt="производитель DeWalt">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/interscol.png" width="200" height="88" alt="производитель Интерскол">
+              <img class="manufacture__image" src="img/brand/interscol.png" width="200" height="88" alt="производитель Интерскол">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/hitachi.png" width="169" height="31" alt="производитель Hitachi">
+              <img class="manufacture__image" src="img/brand/hitachi.png" width="169" height="31" alt="производитель Hitachi">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/lg.png" width="121" height="73" alt="производитель LG">
+              <img class="manufacture__image" src="img/brand/lg.png" width="121" height="73" alt="производитель LG">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/aeg.png" width="151" height="96" alt="производитель AEG">
+              <img class="manufacture__image" src="img/brand/aeg.png" width="151" height="96" alt="производитель AEG">
             </a>
           </li>
           <li class="manufacture__item">
             <a href="#">
-              <img src="img/brand/metabo.png" width="204" height="69" alt="производитель Metabo">
+              <img class="manufacture__image" src="img/brand/metabo.png" width="204" height="69" alt="производитель Metabo">
             </a>
           </li>
         </ul>
@@ -254,15 +250,20 @@
           <ul class="service__slider">
             <li class="slider__delivery">
               <h3 class="slider__title">Доставка</h3>
-              <p class="slider__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+              <p class="slider__text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!</p>
+              <p class="slider__text-delivery">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
             </li>
             <li class="slider__guarantee">
               <h3 class="slider__title">Гарантия</h3>
-              <p class="slider__text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+              <p class="slider__text">Если купленный у нас товар поломается или заискрит,</p>
+              <p class="slider__text-guarantee">а также в случае пожара, спровоцированного его возгаранием,</p>
+              <p class="slider__text-guarantee">вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.</p>
+              <p class="slider__text-guarantee">Дом уж восстановите как-нибудь сами.</p>
             </li>
             <li class="slider__credit">
               <h3 class="slider__title">Кредит</h3>
-              <p class="slider__text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+              <p class="slider__text">Залезть в долговую яму стало проще!</p>
+              <p class="slider__text-credit">Кредитные консультанты придут вам на помощь.</p>
               <a class="slider__btn btn" href="#">Отправить заявку</a>
             </li>
           </ul>

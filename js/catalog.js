@@ -1,3 +1,5 @@
+'use strict';
+
   var sortlink1 = document.querySelector(".catalog-product__link-1");
   var sortlink2 = document.querySelector(".catalog-product__link-2");
   var sort = document.querySelector(".sort-link");
@@ -30,8 +32,8 @@
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       if (cartpopup.classList.contains("modal-cart-show")) {
       cartpopup.classList.remove("modal-cart-show");
       }
